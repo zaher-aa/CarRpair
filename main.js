@@ -33,3 +33,12 @@ window.addEventListener("scroll", () => {
       }));
   });
 });
+
+document.addEventListener("keydown", (e) => {
+  if (e.code === "Escape") {
+    navLinks.classList.remove("active");
+  }
+  if (e.code === "Enter") {
+    navLinks.classList.add("active");
+  }
+});
